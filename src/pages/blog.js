@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react"
+import Layout from "../components/layout"
 
 export default function BlogPage() {
   return (
-    <>
-    <h1>Blog</h1>
-    <p>posts</p>
-    </>
+    <Layout>
+      <h1>Blog</h1>
+      <p>posts</p>
+    </Layout>
   )
 }
-

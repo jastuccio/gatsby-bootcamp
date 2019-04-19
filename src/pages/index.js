@@ -10,7 +10,7 @@ const IndexPage = () => {
       <h2>
         Web Developer, Sailor, Stargazer, Hockey Player, and all around fun guy... but my absolute favorite thing is being a dad.
       </h2>
-      <p>Need a developer?<Link to="/contact/">Contact me.</Link></p>
+      <p>Need a developer? <Link to="/contact/">Contact me.</Link></p>
     </Layout>
   )
 }
