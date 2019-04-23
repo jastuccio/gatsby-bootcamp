@@ -1,6 +1,6 @@
 ---
-title: "React"
-date: "2019-04-02"
+title: 'React'
+date: '2019-04-02'
 ---
 
 learn React.

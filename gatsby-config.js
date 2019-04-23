@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Bootcamp",
-    description: "A Gatsby tutorial by Andrew Mead",
-    author: "Joe Astuccio",
+    title: 'Gatsby Bootcamp',
+    description: 'A Gatsby tutorial by Andrew Mead',
+    author: 'Joe Astuccio',
   },
   plugins: [
     {
@@ -14,7 +14,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: "src",
+        name: 'src',
         path: `${__dirname}/src/`,
       },
     },

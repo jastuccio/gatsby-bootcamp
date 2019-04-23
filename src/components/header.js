@@ -1,8 +1,8 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react'
+import { Link } from 'gatsby'
 
-import styled from "styled-components"
-import { black, gray, gray_dark, gray_dark_2 } from "../utilities"
+import styled from 'styled-components'
+import { black, gray, gray_dark, gray_dark_2 } from '../utilities'
 
 const NavItem_Link = styled(props => (
   <Link activeClassName="active" {...props} />

@@ -1,8 +1,8 @@
-import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import React from 'react'
+import { graphql, useStaticQuery } from 'gatsby'
 
-import Layout from "../components/layout"
-import { node } from "prop-types"
+import Layout from '../components/layout'
+import { node } from 'prop-types'
 
 const BlogPage = () => {
   const data = useStaticQuery(graphql`

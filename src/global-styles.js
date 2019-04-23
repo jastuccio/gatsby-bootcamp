@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
 /* Reset provided by https://github.com/gatsbyjs/gatsby-starter-blog via MIT license */
