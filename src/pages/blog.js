@@ -3,6 +3,20 @@ import { graphql, useStaticQuery, Link } from 'gatsby'
 
 import Layout from '../components/layout'
 
+const PostList = styled.ol`
+  list-style-type: none;
+  margin: 0;
+  color: blue;
+`
+
+const StyledH2 = styled.h2`
+  color: yellow;
+`
+
+const StyledLink = styled(props => <Link {...props} />)`
+  color: aqua;
+`
+
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
     {

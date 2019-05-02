@@ -1,9 +1,9 @@
 import React from 'react'
-import GlobalStyles from '../global-styles'
+import styled from 'styled-components'
 import Header from './header'
 import Footer from './footer'
 
-import styled from 'styled-components'
+import GlobalStyles from '../global-styles'
 
 const Container = styled.div`
   margin: 0 auto;
@@ -19,17 +19,15 @@ const Content = styled.div`
   flex-grow: 1;
 `
 
-const Layout = props => {
-  return (
-    <Container>
-      <GlobalStyles />
-      <Content>
-        <Header />
-        {props.children}
-      </Content>
-      <Footer />
-    </Container>
-  )
-}
+const Layout = props => (
+  <Container>
+    <GlobalStyles />
+    <Content>
+      <Header />
+      {props.children}
+    </Content>
+    <Footer />
+  </Container>
+)
 
 export default Layout
