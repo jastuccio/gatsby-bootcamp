@@ -1,7 +1,6 @@
 import React from 'react'
 import { graphql, useStaticQuery, Link } from 'gatsby'
 
-// import { node } from 'prop-types'
 import styled from 'styled-components'
 import Layout from '../components/layout'
 
@@ -12,6 +11,10 @@ const PostList = styled.ol`
 
 const StyledH2 = styled.h2`
   color: yellow;
+`
+
+const StyledLink = styled(props => <Link {...props} />)`
+  color: aqua;
 `
 
 const BlogPage = () => {
@@ -38,12 +41,12 @@ const BlogPage = () => {
       <PostList>
         {data.allMarkdownRemark.edges.map(edge => (
           <>
-            <Link to={`/blog/${edge.node.fields.slug}`}>
+            <StyledLink to={`/blog/${edge.node.fields.slug}`}>
               <li>
                 <StyledH2>{edge.node.frontmatter.title}</StyledH2>
               </li>
               <p>{edge.node.frontmatter.date}</p>
-            </Link>
+            </StyledLink>
           </>
         ))}
       </PostList>
