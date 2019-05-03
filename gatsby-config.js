@@ -9,6 +9,7 @@ module.exports = {
     author: 'Joe Astuccio',
   },
   plugins: [
+    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-contentful',
       options: {

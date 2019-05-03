@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import { black, gray200, gray300, gray700 } from '../utilities'
 
 import Layout from '../components/layout'
+import Head from '../components/head'
 
 // .posts <ol>
 const PostList = styled.ol`
@@ -56,6 +57,7 @@ const BlogPage = () => {
 
   return (
     <Layout>
+      <Head title="blog" />
       <h1>Blog</h1>
       <PostList>
         {data.allContentfulBlogPost.edges.map(edge => (
