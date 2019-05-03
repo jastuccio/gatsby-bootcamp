@@ -1,6 +1,9 @@
 #secrets
 .env*
 
+#test file
+test-for-diff.js
+
 # Logs
 logs
 *.log
